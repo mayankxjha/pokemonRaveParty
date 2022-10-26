@@ -21,8 +21,9 @@ for (let i = 1; i <= 905; i++) {
     sprite.alt = `${i}`;
     division.id = `poke${i}`;
     division.style.float = 'left';
+    division.style.border = '1px solid blue';
     division.append(sprite);
-    sprite.onclick = () => console.log(sprite.alt);
+    sprite.onclick = () => alert(`This pokemon's id is: ${sprite.alt}`);
     cont.append(division);
 }
 
