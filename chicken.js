@@ -12,7 +12,7 @@
 // }
 
 const cont = document.querySelector('#container');
-for (let i = 1; i <= 1000; i++) {
+for (let i = 1; i <= 900; i++) {
     const sprite = document.createElement('img');
     const division = document.createElement('div');
     sprite.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png`;
