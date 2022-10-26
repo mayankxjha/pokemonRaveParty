@@ -12,16 +12,17 @@
 // }
 
 const cont = document.querySelector('#container');
-for (let i = 1; i <= 900; i++) {
+for (let i = 1; i <= 905; i++) {
     const sprite = document.createElement('img');
     const division = document.createElement('div');
     sprite.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png`;
-    // sprite.width = '300';
-    // sprite.height = '150';
+    sprite.width = '175';
+    sprite.height = '175';
+    sprite.alt = `${i}`;
     division.id = `poke${i}`;
     division.style.float = 'left';
-    sprite.alt = 'pokeSprite';
     division.append(sprite);
+    sprite.onclick = () => console.log(sprite.alt);
     cont.append(division);
 }
 
